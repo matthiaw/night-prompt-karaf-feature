@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="karaf-feature-0.0.1-SNAPSHOT"
+	xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+	<feature name="night-prompt-bundle"
+		version="0.0.1-SNAPSHOT">
+		<bundle>mvn:night.prompt.karaf.bundle/karaf-bundle/0.0.1-SNAPSHOT
+		</bundle>
+	</feature>
+
+	<feature name="night-prompt" version="0.0.1-SNAPSHOT">
+		<feature version="0.0.1-SNAPSHOT">night-prompt-bundle</feature>
+		<bundle>mvn:night.prompt.karaf.command/karaf-command/0.0.1-SNAPSHOT
+		</bundle>
+	</feature>
+
+
+</features>

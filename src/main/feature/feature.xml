@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="${project.artifactId}-${project.version}"
+	xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+	<feature name="night-prompt-bundle"
+		version="${project.version}">
+		<bundle>mvn:night.prompt.karaf.bundle/karaf-bundle/${project.version}
+		</bundle>
+	</feature>
+
+	<feature name="night-prompt" version="${project.version}">
+		<feature version="${project.version}">night-prompt-bundle</feature>
+		<bundle>mvn:night.prompt.karaf.command/karaf-command/${project.version}
+		</bundle>
+	</feature>
+
+
+</features>
