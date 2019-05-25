@@ -1,0 +1,1 @@
+# night-prompt-karaf-feature
